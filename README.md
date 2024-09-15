@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Task Manager Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This Task Manager Application is a React-based project that allows users to manage their tasks efficiently. It provides functionalities to view, update, create, and delete tasks, along with filtering tasks based on their status. The application uses a RESTful API for backend interactions and includes user authentication features.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Register and log in to manage tasks.
+- **Task Management**: Create, update, and delete tasks.
+- **Task Filtering**: Filter tasks based on their status (Pending/Completed).
+- **Task Details**: View detailed information about each task.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with the Task Manager Application, follow these steps:
 
-### `npm test`
+1. **Clone the Repository**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/your-username/task-manager.git
+    cd task-manager_app
+    ```
 
-### `npm run build`
+2. **Install Dependencies**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Ensure you have Node.js and npm installed. Run the following command to install the necessary dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3. **Start the Application**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    The application will be available at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Authentication
 
-## Learn More
+- **Register**: Navigate to `/register` to create a new account.
+- **Login**: Navigate to `/login` to access your account.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Task Management
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **View Tasks**: The homepage displays a list of tasks with options to filter by status.
+- **Update Tasks**: Click on a task to update its details. You can change the title, description, and status.
+- **Create Tasks**: Navigate to `/create-task` to add a new task.
+- **Delete Tasks**: Use the delete button next to each task to remove it from the list.
+- **View Task Details**: Click on a task title or description to view detailed information.
 
-### Code Splitting
+### Filtering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Use the filter buttons to view tasks by their status: All, Completed, or Pending.
 
-### Analyzing the Bundle Size
+## File Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- `src/`: Contains all source code for the application.
+  - `components/`: React components for various features.
+    - `user/`: Components related to user authentication.
+    - `tasklist/`: Components for managing and displaying tasks.
+    - `navbar/`: Component for the navigation bar.
+  - `config/`: Configuration files.
+  - `App.js`: Main application component and routing.
+  - `index.js`: Entry point of the React application.
+- `public/`: Static assets and HTML file.
+- `README.md`: This file.
 
-### Making a Progressive Web App
+## Component Descriptions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### `App.js`
 
-### Advanced Configuration
+Sets up routing and renders the main application components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `Navbar.js`
 
-### Deployment
+Displays the navigation bar with options to log in, register, and manage tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `TaskLists.js`
 
-### `npm run build` fails to minify
+Fetches and displays the list of tasks. Handles task updates and deletions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `TaskRow.js`
+
+Represents a single row in the task list table with actions for updating and deleting tasks.
+
+### `TaskActions.js`
+
+Provides buttons for updating and deleting tasks.
+
+### `UpdateTask.js`
+
+Allows users to update existing tasks.
+
+### `TaskCreate.js`
+
+Form for creating new tasks.
+
+### `TaskDetail.js`
+
+Displays detailed information about a selected task.
+
+## Styling
+
+- The application uses custom CSS for styling components, ensuring a consistent and polished look.
+- CSS files are located in the `src/Components/*/css/` directory.
+

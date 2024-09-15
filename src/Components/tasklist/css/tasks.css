@@ -1,0 +1,146 @@
+.tasks-table-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+
+.task-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.all-btn,
+.completed-btn,
+.pending-btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.all-btn {
+    background-color: #28a745;
+}
+
+.completed-btn {
+    background-color: #007bff;
+}
+
+.pending-btn {
+    background-color: #dc3545;
+}
+
+
+.all-btn:hover,
+.completed-btn:hover,
+.pending-btn:hover {
+    background-color: inherit;
+    transform: none;
+}
+
+
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.tasks-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.tasks-table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+
+.tasks-table td {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+
+.tasks-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.tasks-table tr {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.tasks-table th,
+.tasks-table td {
+    border: none;
+}
+
+
+.tasks-table tbody tr:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+
+    .tasks-table th,
+    .tasks-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+
+.action-btn {
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.update-btn {
+    background-color: #007bff;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+.action-btn svg {
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
