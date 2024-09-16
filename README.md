@@ -19,7 +19,7 @@ To get started with the Task Manager Application, follow these steps:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/task-manager.git
+    git clone https://github.com/ShuhaibMuhammed175/task_manager_Client-Side.git
     cd task-manager_app
     ```
 
